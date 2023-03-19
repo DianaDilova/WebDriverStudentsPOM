@@ -60,11 +60,8 @@ namespace WebDriverStudentsPOM.Tests
             var viewStudentPage = new ViewStudentPage(driver);
             Assert.IsTrue(viewStudentPage.IsPageOpen());
 
-            //Assert.Contains(name, viewStudentPage.GetRegisteredStudents());
             var studentsList = viewStudentPage.GetRegisteredStudents();
             Assert.IsTrue(studentsList.Any(s => s.Contains(name)));
-
-            // Assert.That(viewStudentPage.GetRegisteredStudents().Contains(name), Is.True);
         }
 
         [Test]
