@@ -24,7 +24,6 @@ namespace WebDriverStudentsPOM.Tests
             Assert.That(page.FieldStudentName.Text, Is.EqualTo(""));
             Assert.That(page.FieldStudentEmail.Text, Is.EqualTo(""));
             Assert.That(page.ButtonAdd.Text, Is.EqualTo("Add"));
-
         }
 
         [Test]
