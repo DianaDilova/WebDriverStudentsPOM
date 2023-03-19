@@ -10,7 +10,7 @@ namespace WebDriverStudentsPOM.Pages
         }
 
         public override string BaseUrl => "https://studentregistry.softuniqa.repl.co/students";
-        public ReadOnlyCollection<IWebElement> ListItemsStudents => driver.FindElements(By.CssSelector("body > ul"));
+        public ReadOnlyCollection<IWebElement> ListItemsStudents => driver.FindElements(By.CssSelector("body > ul > li"));
 
         public string[] GetRegisteredStudents()
         {
