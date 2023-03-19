@@ -15,7 +15,7 @@ namespace WebDriverStudentsPOM.Tests
 
         [Test]
 
-        public void Test_TestAddStudentPage_Content()
+        public void Test_AddStudentPage_Content()
         {
             page.Open();
 
@@ -28,7 +28,7 @@ namespace WebDriverStudentsPOM.Tests
 
         [Test]
 
-        public void Test_TestAddStudentPage_Links()
+        public void Test_AddStudentPage_Links()
         {
             page.Open();
             page.HomeLink.Click();
@@ -47,7 +47,7 @@ namespace WebDriverStudentsPOM.Tests
         }
 
         [Test]
-        public void Test_TestAddStudentPage_AddValidStudent()
+        public void Test_AddStudentPage_AddValidStudent()
         {
             page.Open();
 
@@ -65,7 +65,7 @@ namespace WebDriverStudentsPOM.Tests
 
         [Test]
 
-        public void Test_TestAddStudentPage_AddInvalidStudent()
+        public void Test_AddStudentPage_AddInvalidStudent()
         {
             page.Open();
             page.AddStudent("", "invalid@email.com");
